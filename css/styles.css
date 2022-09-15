@@ -476,6 +476,7 @@ h3 {
     transform: scale(1);
   }
 }
+
 .modal-window-button {
   position: absolute;
   width: 30px;
@@ -488,6 +489,131 @@ h3 {
   background-color: var(--white-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-window-form {
+  position: relative;
+}
+
+.modal-window-form-container {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 448px;
+}
+
+.modal-window-form-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 12px 0;
+}
+
+.modal-window-form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--grey-color);
+}
+
+.modal-window-form-input-name,
+.modal-window-form-input-phone,
+.modal-window-form-input-email {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  margin: 4px 0 10px 0;
+  outline: none;
+  padding-left: 42px;
+}
+
+.modal-window-form-input-name {
+  background-image: url("../images/person.svg");
+  background-position: 12px center;
+  background-repeat: no-repeat;
+}
+
+.modal-window-form-input-phone {
+  background-image: url("../images/phone.svg");
+  background-position: 12px center;
+  background-repeat: no-repeat;
+}
+
+.modal-window-form-input-email {
+  background-image: url("../images/email.svg");
+  background-position: 12px center;
+  background-repeat: no-repeat;
+}
+
+.modal-window-form-input-name:focus {
+  background-image: url("../images/person-blue.svg");
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  border: 1px solid var(--blue-color);
+}
+
+.modal-window-form-input-phone:focus {
+  background-image: url("../images/phone-blue.svg");
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  border: 1px solid var(--blue-color);
+}
+
+.modal-window-form-input-email:focus {
+  background-image: url("../images/email-blue.svg");
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  border: 1px solid var(--blue-color);
+}
+
+.modal-window-form-area {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  margin: 4px 0 20px 0;
+  padding: 12px 0 0 16px;
+  outline: none;
+}
+
+.modal-window-form-area:focus {
+  border: 1px solid var(--blue-color);
+}
+
+.modal-window-form-area::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.modal-window-form-policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--grey-color);
+  letter-spacing: 0.03em;
+  margin: 0 0 30px 0;
+  cursor: pointer;
+}
+
+.modal-window-form-policy-input {
+  margin-right: 8px;
+}
+
+.modal-window-form-policy-link {
+  text-decoration: underline;
+  color: var(--blue-color);
 }
 
 /* portfolio page styles */

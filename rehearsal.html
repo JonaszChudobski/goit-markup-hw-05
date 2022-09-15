@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      label {
+        position: relative;
+        cursor: pointer;
+      }
+
+      input {
+        appearance: none;
+        -webkit-appearance: none;
+      }
+
+      input:checked + label::before {
+        background-color: yellowgreen;
+        transform: scale(1.5);
+      }
+
+      label::before {
+        display: block;
+        position: absolute;
+        left: -20px;
+        top: 2px;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 4px;
+        border: 1px dotted black;
+        transition: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <ul>
+        <li>
+          <input type="checkbox" name="hobby" id="hobby-music" value="music" />
+          <label for="hobby-music">Music</label>
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            name="hobby"
+            id="hobby-sports"
+            value="sports"
+          />
+          <label for="hobby-sports">Sports</label>
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            name="hobby"
+            id="hobby-athletics"
+            value="athletics"
+          />
+          <label for="hobby-athletics">Athletics</label>
+        </li>
+      </ul>
+    </form>
+    <button type="submit">Submit</button>
+  </body>
+</html>
