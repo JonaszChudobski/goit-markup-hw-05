@@ -526,8 +526,8 @@ h3 {
 
 .modal-window-form-label-icon {
   position: absolute;
-  left: 16px;
-  top: 31px;
+  left: 12px;
+  top: 30px;
   fill: black;
 }
 
@@ -577,18 +577,40 @@ h3 {
   letter-spacing: 0.01em;
 }
 
-.modal-window-form-policy {
+.modal-window-form-policy-container {
+  margin: 0 0 30px 0;
+  padding: 0;
+  position: relative;
+}
+
+.modal-window-form-policy-label {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   color: var(--grey-color);
   letter-spacing: 0.03em;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px 12px;
   cursor: pointer;
 }
 
+.modal-window-form-policy-label::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 16px;
+  height: 15px;
+  background-image: url("/images/icon-unchecked.svg");
+}
+
+.modal-window-form-policy-input:checked
+  + .modal-window-form-policy-label::before {
+  background-image: url("/images/icon-checked.svg");
+}
 .modal-window-form-policy-input {
-  margin-right: 8px;
+  appearance: none;
+  margin: 0;
+  padding: 0;
 }
 
 .modal-window-form-policy-link {

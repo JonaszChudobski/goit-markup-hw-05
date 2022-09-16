@@ -436,8 +436,8 @@
                 required
               /><svg
                 class="modal-window-form-label-icon"
-                width="15"
-                height="16"
+                width="18"
+                height="18"
               >
                 <use href="./images/icons.svg#icon-person" />
               </svg>
@@ -452,8 +452,8 @@
                 required
               /><svg
                 class="modal-window-form-label-icon"
-                width="15"
-                height="16"
+                width="18"
+                height="18"
               >
                 <use href="./images/icons.svg#icon-phone" />
               </svg>
@@ -468,8 +468,8 @@
                 required
               /><svg
                 class="modal-window-form-label-icon"
-                width="15"
-                height="16"
+                width="18"
+                height="18"
               >
                 <use href="./images/icons.svg#icon-email" />
               </svg>
@@ -482,7 +482,7 @@
                 placeholder="Wprowadź tekst"
               ></textarea>
             </label>
-            <label for="policy" class="modal-window-form-policy">
+            <div class="modal-window-form-policy-container">
               <input
                 class="modal-window-form-policy-input"
                 id="policy"
@@ -490,12 +490,14 @@
                 name="policy"
                 value="accepted"
                 required
-              />Oświadczam iż akceptuję
-              <a class="modal-window-form-policy-link" href="">Regulamin</a> i
-              <a class="modal-window-form-policy-link" href=""
-                >Politykę Prywatności.</a
-              ></label
-            >
+              /><label for="policy" class="modal-window-form-policy-label"
+                >Oświadczam iż akceptuję
+                <a class="modal-window-form-policy-link" href="">Regulamin</a> i
+                <a class="modal-window-form-policy-link" href=""
+                  >Politykę Prywatności.</a
+                ></label
+              >
+            </div>
             <button class="studio-slider-button" type="submit">Wyślij</button>
           </div>
         </form>
