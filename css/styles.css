@@ -516,11 +516,19 @@ h3 {
 }
 
 .modal-window-form-label {
+  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--grey-color);
+}
+
+.modal-window-form-label-icon {
+  position: absolute;
+  left: 16px;
+  top: 31px;
+  fill: black;
 }
 
 .modal-window-form-input-name,
@@ -535,43 +543,15 @@ h3 {
   padding-left: 42px;
 }
 
-.modal-window-form-input-name {
-  background-image: url("../images/person.svg");
-  background-position: 12px center;
-  background-repeat: no-repeat;
-}
-
-.modal-window-form-input-phone {
-  background-image: url("../images/phone.svg");
-  background-position: 12px center;
-  background-repeat: no-repeat;
-}
-
-.modal-window-form-input-email {
-  background-image: url("../images/email.svg");
-  background-position: 12px center;
-  background-repeat: no-repeat;
-}
-
+.modal-window-form-input-email:focus,
+.modal-window-form-input-phone:focus,
 .modal-window-form-input-name:focus {
-  background-image: url("../images/person-blue.svg");
-  background-position: 12px center;
-  background-repeat: no-repeat;
   border: 1px solid var(--blue-color);
 }
-
-.modal-window-form-input-phone:focus {
-  background-image: url("../images/phone-blue.svg");
-  background-position: 12px center;
-  background-repeat: no-repeat;
-  border: 1px solid var(--blue-color);
-}
-
-.modal-window-form-input-email:focus {
-  background-image: url("../images/email-blue.svg");
-  background-position: 12px center;
-  background-repeat: no-repeat;
-  border: 1px solid var(--blue-color);
+.modal-window-form-input-email:focus + .modal-window-form-label-icon,
+.modal-window-form-input-phone:focus + .modal-window-form-label-icon,
+.modal-window-form-input-name:focus + .modal-window-form-label-icon {
+  fill: var(--blue-color);
 }
 
 .modal-window-form-area {

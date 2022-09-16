@@ -432,7 +432,15 @@
                 class="modal-window-form-input-name"
                 id="name"
                 type="text"
-              />
+                name="name"
+                required
+              /><svg
+                class="modal-window-form-label-icon"
+                width="15"
+                height="16"
+              >
+                <use href="./images/icons.svg#icon-person" />
+              </svg>
             </label>
             <label class="modal-window-form-label" for="phone"
               >Telefon
@@ -440,7 +448,15 @@
                 class="modal-window-form-input-phone"
                 id="phone"
                 type="tel"
-              />
+                name="phone"
+                required
+              /><svg
+                class="modal-window-form-label-icon"
+                width="15"
+                height="16"
+              >
+                <use href="./images/icons.svg#icon-phone" />
+              </svg>
             </label>
             <label class="modal-window-form-label" for="email"
               >Email
@@ -448,12 +464,21 @@
                 class="modal-window-form-input-email"
                 id="email"
                 type="email"
-              />
+                name="email"
+                required
+              /><svg
+                class="modal-window-form-label-icon"
+                width="15"
+                height="16"
+              >
+                <use href="./images/icons.svg#icon-email" />
+              </svg>
             </label>
             <label class="modal-window-form-label" for="textarea"
               >Komentarz<textarea
                 class="modal-window-form-area"
                 id="textarea"
+                name="comment"
                 placeholder="Wprowadź tekst"
               ></textarea>
             </label>
@@ -464,6 +489,7 @@
                 type="checkbox"
                 name="policy"
                 value="accepted"
+                required
               />Oświadczam iż akceptuję
               <a class="modal-window-form-policy-link" href="">Regulamin</a> i
               <a class="modal-window-form-policy-link" href=""
