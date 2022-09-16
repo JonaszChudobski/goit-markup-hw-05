@@ -433,6 +433,9 @@
                 id="name"
                 type="text"
                 name="name"
+                minlength="2"
+                pattern="^(?!.*\d).*$"
+                title="Proszę wprowadzić litery"
                 required
               /><svg
                 class="modal-window-form-label-icon"
@@ -449,6 +452,9 @@
                 id="phone"
                 type="tel"
                 name="phone"
+                minlength="9"
+                title="Numer telefonu składa się z minimum 9 cyfr"
+                pattern="^(?!.*[a-zA-Z]).*$"
                 required
               /><svg
                 class="modal-window-form-label-icon"
